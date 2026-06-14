@@ -47,8 +47,8 @@ const posterFiles = [
   "infinity-pool-poster.width-800.jpg"
 ];
 
-const desktopPosterPath = "carousel-desktop-534h/";
-const mobilePosterPath = "carousel-mobile-tablet-602h/";
+const desktopPosterPath = "/poster-carousel/carousel-desktop-534h/";
+const mobilePosterPath = "/poster-carousel/carousel-mobile-tablet-602h/";
 const track = document.querySelector("#posterCarouselTrack");
 
 function posterAltText(fileName) {

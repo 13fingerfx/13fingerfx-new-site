@@ -10,7 +10,7 @@ Upload these five items together to the website:
 - `carousel-desktop-534h/`
 - `carousel-mobile-tablet-602h/`
 
-The two image folders must stay next to `poster-carousel.js`, unless you update the folder paths inside the JavaScript file.
+The two image folders are currently configured for this Netlify site under `/poster-carousel/`.
 
 ## Add the carousel to the page
 
@@ -31,10 +31,10 @@ If the page already has a shared site header/footer template, place only the `<s
 
 ## Folder structure
 
-The default setup expects this structure:
+The checked-in setup uses this structure:
 
 ```text
-your-page-folder/
+/poster-carousel/
   poster-carousel.html
   poster-carousel.css
   poster-carousel.js
@@ -49,8 +49,8 @@ your-page-folder/
 If the files are placed somewhere else, update these two lines in `poster-carousel.js`:
 
 ```js
-const desktopPosterPath = "carousel-desktop-534h/";
-const mobilePosterPath = "carousel-mobile-tablet-602h/";
+const desktopPosterPath = "/poster-carousel/carousel-desktop-534h/";
+const mobilePosterPath = "/poster-carousel/carousel-mobile-tablet-602h/";
 ```
 
 For example, if the folders are uploaded into `/assets/posters/`, use:
