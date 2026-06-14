@@ -6,12 +6,12 @@
     <title>About | 13 Finger FX</title>
     <meta name="description" content="About 13 Finger FX, a London practical effects studio led by Dan Martin and Jen Handorf.">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/poster-carousel/poster-carousel.css">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="/" aria-label="13 Finger FX home">
-        <span class="brand-mark">13</span>
-        <span class="brand-name">Finger FX</span>
+        <img src="/assets/ffx-logo-white.png" alt="13 Finger FX">
       </a>
       <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
@@ -24,8 +24,7 @@
 
     <main>
       <section class="page-intro">
-        <p class="eyebrow">Practical FX Studio</p>
-        <h1>About 13FFX</h1>
+        <p class="studio-line">Practical<br>FX Studio</p>
       </section>
 
       <section class="copy-block">
@@ -35,9 +34,14 @@
         <p>Together, Dan and Jen work with a diverse network of established veterans and emerging artists, drawing on a wide spectrum of skills and perspectives. The studio's approach is never limited to a single workflow; solutions are tailored to each moment on screen, which might mean sources of inspiration as disparate as blending the latest digital scanning and 3D printing technology with mechanical effects rooted in illusion techniques that pre-date cinema itself. The result is a body of work defined by versatility, ingenuity, and a commitment to creating effects that can amaze and shock or simply pass unseen, an unquestioned piece of a world the audience are fully immersed in.</p>
       </section>
 
+      <section class="poster-carousel about-carousel" aria-label="Movie posters">
+        <div class="poster-carousel__viewport">
+          <div class="poster-carousel__track" id="posterCarouselTrack"></div>
+        </div>
+      </section>
+
       <section class="services" aria-labelledby="services-heading">
         <div class="section-heading">
-          <p class="eyebrow">Capabilities</p>
           <h2 id="services-heading">Practical effects disciplines</h2>
         </div>
         <div class="service-grid">
@@ -87,5 +91,6 @@
     </footer>
 
     <script src="/script.js"></script>
+    <script src="/poster-carousel/poster-carousel.js" defer></script>
   </body>
 </html>
