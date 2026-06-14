@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | 13 Finger FX</title>
+    <meta name="description" content="Contact 13 Finger FX, a practical effects studio based in London.">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="13 Finger FX home">
+        <span class="brand-mark">13</span>
+        <span class="brand-name">Finger FX</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/info/">About</a>
+        <a href="/contact/" aria-current="page">Contact</a>
+        <a href="/apply/">Crew Form</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">Contact</p>
+        <h1>Come say hi.</h1>
+        <p>While our work takes us all over the world, our main workshop is based in London, England.</p>
+      </section>
+
+      <section class="split-section">
+        <form class="form-panel" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks/">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden-field">
+            <label>Do not fill this in: <input name="bot-field"></label>
+          </p>
+          <label>First name <input name="first-name" autocomplete="given-name" required></label>
+          <label>Last name <input name="last-name" autocomplete="family-name"></label>
+          <label>Email <input type="email" name="email" autocomplete="email" required></label>
+          <label>Phone <input type="tel" name="phone" autocomplete="tel"></label>
+          <label>Message <textarea name="message" rows="6" required></textarea></label>
+          <button type="submit">Submit</button>
+        </form>
+
+        <aside class="contact-details">
+          <h2>Workshop</h2>
+          <p>Unit 7, Metro Business Centre<br>Kangley Bridge Rd<br>London, SE26 5BW<br>UK</p>
+          <p class="muted">Email and telephone are still placeholders in the Wix reference. Add final details here before launch.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>13FFX</strong>
+        <span>Practical FX Studio</span>
+      </div>
+      <address>Unit 7, Metro Business Centre, Kangley Bridge Rd, London, SE26 5BW, UK</address>
+      <p>&copy; 2025 13 Finger FX</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

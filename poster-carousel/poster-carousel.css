@@ -1,0 +1,78 @@
+.poster-carousel {
+  --poster-height: 534px;
+  --poster-gap: 28px;
+  --scroll-duration: 140s;
+  inline-size: 100%;
+  block-size: var(--poster-height);
+  overflow: hidden;
+  background: #080808;
+}
+
+.poster-carousel__viewport {
+  position: relative;
+  block-size: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.poster-carousel__track {
+  display: flex;
+  align-items: center;
+  gap: var(--poster-gap);
+  block-size: 100%;
+  inline-size: max-content;
+  animation: poster-carousel-scroll var(--scroll-duration) linear infinite;
+  will-change: transform;
+}
+
+.poster-carousel:hover .poster-carousel__track {
+  animation-play-state: paused;
+}
+
+.poster-carousel__item {
+  flex: 0 0 auto;
+  block-size: var(--poster-height);
+}
+
+.poster-carousel__item img {
+  display: block;
+  block-size: 100%;
+  inline-size: auto;
+  max-inline-size: none;
+  object-fit: contain;
+}
+
+@keyframes poster-carousel-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - (var(--poster-gap) / 2)));
+  }
+}
+
+@media (max-width: 900px) {
+  .poster-carousel {
+    --poster-height: 602px;
+    --poster-gap: 20px;
+    --scroll-duration: 120s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .poster-carousel {
+    overflow-x: auto;
+  }
+
+  .poster-carousel__viewport {
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .poster-carousel__track {
+    animation: none;
+  }
+}

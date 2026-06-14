@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crew Form | 13 Finger FX</title>
+    <meta name="description" content="Apply to work with 13 Finger FX through the crew application form.">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="13 Finger FX home">
+        <span class="brand-mark">13</span>
+        <span class="brand-name">Finger FX</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/info/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/apply/" aria-current="page">Crew Form</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">Crew Form</p>
+        <h1>Work with 13FFX.</h1>
+        <p>Tell us who you are, where you are based, and what practical effects work you do.</p>
+      </section>
+
+      <section class="form-section">
+        <form class="form-panel wide-form" name="crew-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks/">
+          <input type="hidden" name="form-name" value="crew-application">
+          <p class="hidden-field">
+            <label>Do not fill this in: <input name="bot-field"></label>
+          </p>
+          <div class="form-grid">
+            <label>First name <input name="first-name" autocomplete="given-name" required></label>
+            <label>Last name <input name="last-name" autocomplete="family-name" required></label>
+            <label>Phone <input type="tel" name="phone" autocomplete="tel"></label>
+            <label>Email <input type="email" name="email" autocomplete="email" required></label>
+          </div>
+          <label>Address <textarea name="address" rows="3"></textarea></label>
+          <label>Portfolio or website link <input type="url" name="portfolio-link" placeholder="https://"></label>
+          <div class="form-grid">
+            <label>Primary discipline
+              <select name="primary-discipline">
+                <option value="">Select one</option>
+                <option>Prosthetics</option>
+                <option>Creature FX</option>
+                <option>Puppets</option>
+                <option>Model making</option>
+                <option>Moulding and casting</option>
+                <option>Props</option>
+                <option>Stunt FX</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Availability
+              <select name="availability">
+                <option value="">Select one</option>
+                <option>Immediately available</option>
+                <option>Available for dailies</option>
+                <option>Available for long bookings</option>
+                <option>Currently unavailable</option>
+              </select>
+            </label>
+          </div>
+          <label>Notes <textarea name="notes" rows="6"></textarea></label>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>13FFX</strong>
+        <span>Practical FX Studio</span>
+      </div>
+      <address>Unit 7, Metro Business Centre, Kangley Bridge Rd, London, SE26 5BW, UK</address>
+      <p>&copy; 2025 13 Finger FX</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
